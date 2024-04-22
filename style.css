@@ -12,9 +12,6 @@ h1 {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 300;
 }
-body {
-  position: relative;
-}
 
 nav {
   position: fixed;
@@ -22,8 +19,7 @@ nav {
   left: 0;
   right: 0;
   z-index: 20;
-
-  background-color: rgb(20, 21, 21);
+  background-color: rgb(18, 17, 17);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -31,9 +27,9 @@ nav {
   padding: 10px 8px;
   height: 50px;
 }
-nav .logo {
-  color: rgb(214, 115, 55);
 
+nav .logo {
+  color: rgb(255, 255, 255);
   width: 40px;
   font-weight: bold;
   display: flex;
@@ -41,12 +37,14 @@ nav .logo {
   justify-content: space-between;
   gap: 20px;
   align-items: center;
+  margin-top: 55px;
 }
 div.logo span {
   font-size: 20px;
 }
 div.logo p {
-  font-size: 20px;
+  color: chocolate;
+  font-size: 40px;
 }
 nav .logo span {
   color: rgb(255, 255, 255);
@@ -59,8 +57,9 @@ nav .logo span {
   margin: 0 15px;
 }
 nav img {
-  width: 40px;
+  width: 45px;
   border-radius: 2px;
+  margin-top: -55px;
 }
 .menu li a {
   font-size: 18px;
@@ -69,14 +68,19 @@ nav img {
   transition: 0.2s;
 }
 .menu li a:hover {
-  color: rgb(214, 115, 55);
+  color: chocolate;
 }
 nav button {
   background-color: rgb(20, 21, 21);
-  color: rgb(214, 115, 55);
-  border: 1px solid white;
+  color: rgb(255, 255, 255);
+  border: 1px solid rgb(255, 255, 255);
   padding: 5px 15px;
   border-radius: 10px;
+}
+nav button:hover {
+  background-color: chocolate;
+  color: rgb(0, 0, 0);
+  border: 1px solid rgb(0, 0, 0);
 }
 #guitar-photo {
   width: 100%;
@@ -85,7 +89,15 @@ nav button {
 .screen {
   position: relative;
   display: inline-block;
-  filter: brightness(60px);
+  filter: brightness(70%);
+}
+img#guitar-photo {
+  margin-top: 30px;
+}
+div.description {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
 }
 
 .description {
@@ -93,29 +105,60 @@ nav button {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 60px;
+  gap: 50px;
   top: 100px;
   left: 50%;
   font-family: Arial, Helvetica, sans-serif;
 }
 h1 {
-  font-size: 80px;
+  font-size: 60px;
   font-family: Arial, Helvetica, sans-serif;
   color: rgb(255, 255, 255);
+}
+h1 span {
+  color: chocolate;
 }
 p {
   font-size: medium;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: chocolate;
+  color: rgb(255, 255, 255);
+  padding-bottom: 50px;
 }
 
-.contact {
-  border: 1px solid black;
-  border-radius: 10px;
-  width: 200px;
-  height: 50px;
-  margin: 180px;
+.description a {
+  border-radius: 20px;
+  position: relative;
+  width: 120px;
+  height: 40px;
+  margin: 70px;
+  left: 200px;
+  bottom: 50px;
+  color: rgb(255, 255, 255);
+  padding: 8px 35px;
+  font-size: 1.5em;
+  font-weight: 400;
+  text-decoration: none;
+  letter-spacing: 0.5s;
+  text-transform: uppercase;
   background-color: chocolate;
-  color: black;
-  font-size: 30px;
+}
+
+.description a:hover {
+  transform: scale(1.1);
+  letter-spacing: 0.1em;
+  background-color: chocolate;
+  box-shadow: 0 0 10px chocolate;
+  color: rgb(255, 255, 255);
+}
+
+.description a:hover i:before {
+  width: 20px;
+  left: 20%;
+}
+.description img {
+  width: 50%;
+  height: 50%;
+  border-radius: 50px;
+  margin-top: -390px;
+  margin-left: 140px;
 }
